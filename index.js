@@ -54,7 +54,7 @@ document.querySelectorAll('.main-container button').forEach(button => {
     button.addEventListener('click', function () {
 
         const presetNum = this.getAttribute('data-command');
-        if (presetNum === 'reboot') return;
+        if (presetNum !== 'reboot') return;
         const request = { method: 'GET' }
 
         fetchWithTimeout(rebootAPI, request)
