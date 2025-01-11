@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cameras JW</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css" />
+</head>
+
+<body>
+    <div class="main-container">
+        <!-- Preset Buttons Section -->
+        <div class="preset-section">
+            <button class="preset-button" data-preset-num="0">
+                Salão
+                &nbsp;
+                <i class="fas fa-home"></i>
+            </button>
+            <div class="middle-preset-buttons">
+                <button class="preset-button" data-preset-num="3">
+                    <i class="fas fa-table" style="padding-left: 5px; padding-right: 5px;"></i>
+                    Mesa
+                </button>
+                <button class="preset-button" data-preset-num="1">
+                    <i class="fas fa-user-tie" style="padding-left: 5px; padding-right: 5px;"></i>
+                    Tribuna
+                </button>
+                <button class="preset-button" data-preset-num="2">
+                    <i class="fas fa-book-reader" style="padding-left: 5px; padding-right: 5px;"></i>
+                    Leitor
+                </button>
+            </div>
+            <button class="preset-button" data-preset-num="4">
+                <i class="fas fa-user-tie"></i>
+                &nbsp;
+                Orador e Leitor
+                &nbsp;
+                <i class="fas fa-microphone"></i>
+            </button>
+        </div>
+
+        <!-- Zoom Buttons Section -->
+        <div class="commands zoom-section">
+            <button class="zoom-button" data-command="13">
+                <i class="fas fa-search-plus"></i>
+            </button>
+            <button class="zoom-button" data-command="14">
+                <i class="fas fa-search-minus"></i>
+            </button>
+            <button class="reboot-button" data-command="reboot">
+                <i class="fa-duotone fa-solid fa-arrows-rotate"></i>
+            </button>
+        </div>
+
+        <!-- Directional Buttons Section -->
+        <div class="commands directional-section">
+            <button class="direction-button" data-command="1">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            <div class="middle-direction">
+                <button class="direction-button" data-command="3">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <button class="direction-button" data-command="4">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+            <button class="direction-button" data-command="2">
+                <i class="fas fa-arrow-down"></i>
+            </button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
+
+
+<!-- 
+ stop = command 0
+ zoom - = command 14
+ zoom + = command 13 
+ up = 1
+ down = 1
+ left = 3
+ right = 4
+ down left = 5
+ up left = 6
+ up right = 7
+ down right = 8
+focus = 
+unfocus = 
+-->

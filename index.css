@@ -1,0 +1,154 @@
+/* General Styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 12px 16px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    transition: background-color 0.3s, transform 0.1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+button i {
+    margin-right: 8px;
+}
+
+/* Main Container */
+.main-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* Preset Section */
+.preset-section {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+    width: 70%;
+}
+
+.preset-button {
+    background-color: #007BFF;
+    width: 100%;
+    text-align: center;
+    padding-left: 12px;
+    font-size: 16px;
+}
+
+.preset-button:hover {
+    background-color: #0056b3;
+}
+
+/* Middle Preset Buttons (3 buttons in a row) */
+.middle-preset-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.middle-preset-buttons .preset-button {
+    text-align: center;
+    padding-left: 0;
+}
+
+/* Zoom Section */
+.zoom-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 5%;
+    align-items: center;
+}
+
+.zoom-button {
+    background-color: #28a745;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.reboot-button {
+    background-color: #ff4455;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.zoom-button:hover {
+    background-color: #1e7e34;
+}
+
+/* Directional Section */
+.directional-section {
+    display: grid;
+    grid-template-areas:
+        "up"
+        "middle"
+        "down";
+    gap: 10px;
+    width: 30%;
+    justify-items: center;
+}
+
+.directional-section .direction-button {
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+.directional-section .middle-direction {
+    display: flex;
+    gap: 10px;
+    grid-area: middle;
+}
+
+.directional-section .up {
+    grid-area: up;
+}
+
+.directional-section .down {
+    grid-area: down;
+}
+
+.direction-button {
+    background-color: #8000b3;
+}
+
+.direction-button:hover {
+    background-color: #5c0099;
+}
+
+/* Active State for Buttons */
+button:active {
+    transform: scale(0.98);
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
