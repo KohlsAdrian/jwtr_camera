@@ -1,9 +1,9 @@
 
 
-const baseUrl = 'http://192.168.0.245'
-const rebootAPI = `${baseUrl}/form/reboot`
-const presetSetAPI = `${baseUrl}/form/presetSet`
-const setPTZCfgAPI = `${baseUrl}/form/setPTZCfg`
+const baseUrl = 'http://192.168.0.245';
+const rebootAPI = `${baseUrl}/form/reboot`;
+const presetSetAPI = `${baseUrl}/form/presetSet`;
+const setPTZCfgAPI = `${baseUrl}/form/setPTZCfg`;
 const headers = { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' }
 
 function fetchWithTimeout(url, options = {}, timeout = 1000) {
@@ -144,7 +144,7 @@ PTSpeed: 0
 panSpeed: 1
 tiltSpeed: 1
 focusSpeed: 2
-FocusMode: 3
+FocusMode: 2
 zoomSpeed: 2
 standBy: 0
- */
+ */ 
